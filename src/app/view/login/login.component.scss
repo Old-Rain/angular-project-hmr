@@ -1,0 +1,32 @@
+.login-wrap {
+  height: 100%;
+  background: url("../../../assets/gamersky_086origin_171_20143211026B41.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+
+.login-filter {
+  position: relative;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.login-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.login-form-margin {
+  margin-bottom: 16px;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}

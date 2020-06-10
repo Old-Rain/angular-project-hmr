@@ -38,19 +38,25 @@ export class LoginComponent implements OnInit {
     }
 
     // 校验成功 保存token并跳转到home页
-    this.loginService.login(value).subscribe((res: any) => {
-      sessionStorage.setItem('token', res.token)
-      this.router.navigate(['/home'])
-    })
+    this.loginService.login(value).subscribe(
+      (res: any) => {
+        sessionStorage.setItem('token', res.token)
+        this.router.navigate(['/home'])
+      },
+      (err) => console.log(err)
+    )
   }
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
       username: [
-        '',
+        'zce',
         [Validators.required, Validators.minLength(2), Validators.maxLength(6)],
       ],
-      password: ['', [Validators.required, Validators.pattern(/^\w{6,12}$/)]],
+      password: [
+        'wanglei',
+        [Validators.required, Validators.pattern(/^\w{6,12}$/)],
+      ],
     })
   }
 }

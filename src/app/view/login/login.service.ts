@@ -3,11 +3,14 @@ import { HttpClient } from '@angular/common/http'
 
 import { LoginParams } from './login.type'
 
+const baseURL = 'http://localhost:2080'
+
 @Injectable()
 export class LoginService {
   constructor(private http: HttpClient) {}
 
+  // 登录
   login(params: LoginParams) {
-    return this.http.post('http://localhost:2080/tokens', params)
+    return this.http.post(`${baseURL}/tokens`, params)
   }
 }

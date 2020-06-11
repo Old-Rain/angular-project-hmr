@@ -1,1 +1,45 @@
-<p>home works!</p>
+<nz-layout class="home-wrap">
+  <nz-header>
+    <div class="logo"></div>
+    <button
+      class="exit"
+      nz-popconfirm
+      nzPopconfirmTitle="确认退出系统吗？"
+      (nzOnConfirm)="confirm()"
+      nzPopconfirmPlacement="bottom"
+      nz-button
+    >
+      退出
+    </button>
+  </nz-header>
+  <nz-layout>
+    <nz-sider nzWidth="200px">
+      <ul nz-menu nzMode="inline" class="sider-menu" nzTheme="dark">
+        <li nz-submenu nzIcon="user" nzTitle="员工管理">
+          <ul>
+            <li nz-menu-item routerLink="/home/employee">员工列表</li>
+            <li nz-menu-item routerLink="/home/employee/employee-add">
+              员工添加
+            </li>
+          </ul>
+        </li>
+        <li nz-submenu nzIcon="meh" nzTitle="角色管理">
+          <ul>
+            <li nz-menu-item>角色列表</li>
+            <li nz-menu-item>角色添加</li>
+          </ul>
+        </li>
+        <li nz-submenu nzIcon="lock" nzTitle="权限管理">
+          <ul>
+            <li nz-menu-item>权限列表</li>
+          </ul>
+        </li>
+      </ul>
+    </nz-sider>
+    <nz-layout class="inner-layout">
+      <nz-content>
+        <router-outlet></router-outlet>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>

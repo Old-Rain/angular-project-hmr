@@ -18,8 +18,21 @@ const routes: Routes = [
   },
   {
     path: 'home',
+    redirectTo: '/home/employee',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
     component: HomeComponent,
     canActivate: [AuthGuard], // 路由守卫
+    children: [
+      {
+        path: 'employee',
+
+        // 异步路由 格式path#moduleName（路径#模块名）
+        loadChildren: './view/employee/employee.module#EmployeeModule',
+      },
+    ],
   },
 ]
 

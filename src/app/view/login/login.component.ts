@@ -33,9 +33,7 @@ export class LoginComponent implements OnInit {
     }
 
     // 校验失败
-    if (!valid) {
-      return
-    }
+    if (!valid) return
 
     // 校验成功 保存token并跳转到home页
     this.loginService.login(value).subscribe(

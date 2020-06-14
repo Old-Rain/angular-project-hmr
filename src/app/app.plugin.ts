@@ -5,7 +5,7 @@ import { NzFormModule } from 'ng-zorro-antd/form'
 import { NzInputModule } from 'ng-zorro-antd/input'
 import { NzButtonModule } from 'ng-zorro-antd/button'
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox'
-import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
+import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm'
 
 export const AntdModules = [
   NzGridModule,

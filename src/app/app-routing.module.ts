@@ -29,8 +29,15 @@ const routes: Routes = [
       {
         path: 'employee',
 
-        // 异步路由 格式path#moduleName（路径#模块名）
-        loadChildren: './view/employee/employee.module#EmployeeModule',
+        // 异步路由
+        // v6 path#moduleName（路径#模块名）
+        // loadChildren: './view/employee/employee.module#EmployeeModule',
+
+        // v9
+        loadChildren: () =>
+          import('./view/employee/employee.module').then(
+            (m) => m.EmployeeModule
+          ),
       },
     ],
   },

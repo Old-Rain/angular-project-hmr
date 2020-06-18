@@ -11,6 +11,8 @@ export class LoginService {
 
   // 登录
   login(params: LoginParams) {
-    return this.http.post(`${baseURL}/tokens`, params)
+    return this.http.post(`${baseURL}/tokens`, params, {
+      headers: { NoAuthorization: '1' },
+    })
   }
 }

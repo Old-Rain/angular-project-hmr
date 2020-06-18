@@ -39,7 +39,14 @@
       <td>
         <a>修改</a>
         <nz-divider nzType="vertical"></nz-divider>
-        <a>删除</a>
+        <a
+          nz-popconfirm
+          nzPopconfirmTitle="确认删除吗?"
+          (nzOnConfirm)="delEnter(data.id)"
+          nzPopconfirmPlacement="bottom"
+          nz-button
+          >删除</a
+        >
       </td>
     </tr>
   </tbody>

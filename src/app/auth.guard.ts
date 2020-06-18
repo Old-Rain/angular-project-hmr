@@ -1,5 +1,6 @@
 /**
  * 路由守卫
+ * ng g guard guardName
  * CanActive 处理导航到某路由的情况
  * CanActiveChild 处理导航到某子路由的情况
  * CanDeactive 处理从当前路由离开的情况

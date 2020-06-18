@@ -8,10 +8,9 @@ export class HomeService {
   constructor(private http: HttpClient) {}
 
   exit() {
-    const token = sessionStorage.getItem('token')
-
+    // const token = sessionStorage.getItem('token')
     return this.http.delete(`${baseURL}/tokens`, {
-      headers: { Authorization: `Bearer ${token}` },
+      // headers: { Authorization: `Bearer ${token}` },
     })
   }
 }

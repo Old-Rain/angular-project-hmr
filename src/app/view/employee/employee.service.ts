@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 
+import { Employee } from './employee.type'
+
 const baseURL = 'http://localhost:2080'
 
 @Injectable()
@@ -19,5 +21,9 @@ export class EmployeeService {
   // 删除
   delEmployee(id: number) {
     return this.http.delete(`${baseURL}/employees/${id}`)
+  }
+
+  addEmployee(params: Employee) {
+    return this.http.post(`${baseURL}/employees`, params)
   }
 }

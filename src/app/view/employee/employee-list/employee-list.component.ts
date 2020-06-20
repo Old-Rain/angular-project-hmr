@@ -14,7 +14,7 @@ export class EmployeeListComponent implements OnInit {
   isLoading = false // 加载中
   employeeList: EmployeeList[] = []
   page = 1
-  limit = 2
+  limit = 5
   total: number
 
   constructor(

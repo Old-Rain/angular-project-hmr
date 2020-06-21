@@ -6,6 +6,7 @@ import { NzInputModule } from 'ng-zorro-antd/input'
 import { NzButtonModule } from 'ng-zorro-antd/button'
 import { NzRadioModule } from 'ng-zorro-antd/radio'
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker'
+import { NzModalModule } from 'ng-zorro-antd/modal'
 
 export const AntdModules = [
   NzTableModule,
@@ -16,4 +17,5 @@ export const AntdModules = [
   NzButtonModule,
   NzRadioModule,
   NzDatePickerModule,
+  NzModalModule,
 ]

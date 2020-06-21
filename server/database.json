@@ -54,60 +54,52 @@
   ],
   "employees": [
     {
-      "name": "刘玺",
-      "gender": "1",
-      "email": "liuxi1@itcast.cn",
-      "phoneNumber": "18866660001",
-      "joinDate": 1443657599999,
-      "id": 1
-    },
-    {
-      "name": "刘玺6",
-      "gender": "1",
-      "email": "liuxi6@icast.cn",
-      "phoneNumber": "18800008886",
-      "joinDate": 1535774104903,
-      "id": 8
-    },
-    {
-      "name": "刘玺999",
-      "gender": "1",
-      "email": "liuxi999@itcast.cn",
-      "phoneNumber": "18866668999",
-      "joinDate": "Sun Sep 02 2018 12:03:21 GMT+0800 (中国标准时间)",
-      "id": 10
-    },
-    {
-      "name": "刘玺",
-      "gender": "1",
-      "email": "ceshi@itcast.cn",
-      "phoneNumber": "18888886666",
-      "joinDate": 1536208528036,
-      "id": 11
-    },
-    {
       "name": "肖自在",
       "gender": "1",
       "email": "xzz@163.com",
       "phoneNumber": "18972970004",
-      "joinDate": 1592473504578,
+      "joinDate": 1592646304578,
       "id": 12
-    },
-    {
-      "name": "冯宝宝",
-      "gender": "0",
-      "email": "fbb@ndt.com",
-      "phoneNumber": "",
-      "joinDate": 0,
-      "id": 13
     },
     {
       "name": "高二壮",
       "gender": "0",
       "email": "gez@ndt.com",
       "phoneNumber": "13655897846",
-      "joinDate": 1592646631465,
+      "joinDate": 1591955431465,
       "id": 14
+    },
+    {
+      "name": "王震球",
+      "gender": "1",
+      "email": "wzq@ndt.com",
+      "phoneNumber": "17765657789",
+      "joinDate": 1592713091940,
+      "id": 15
+    },
+    {
+      "name": "张楚岚",
+      "gender": "1",
+      "email": "zcl@ndt.com",
+      "phoneNumber": "15678789898",
+      "joinDate": 1591849144406,
+      "id": 16
+    },
+    {
+      "name": "陈朵",
+      "gender": "0",
+      "email": "cd@ndt.com",
+      "phoneNumber": "18565658978",
+      "joinDate": 1592713172947,
+      "id": 17
+    },
+    {
+      "name": "冯宝宝",
+      "gender": "0",
+      "email": "fbb@ndt.com",
+      "phoneNumber": "18985658978",
+      "joinDate": 1592713218347,
+      "id": 18
     }
   ]
 }

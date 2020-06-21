@@ -3,7 +3,7 @@ export interface Employee {
   gender: string
   phoneNumber: string
   email: string
-  joinDate: string | number
+  joinDate: string | number | Date
 }
 
 export interface EmployeeList extends Employee {
